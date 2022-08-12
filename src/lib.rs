@@ -91,6 +91,12 @@ mod tests {
     }
 
     #[test]
+    fn second_happy_path() {
+        let output = "very long string".strunc_len(10);
+        assert_eq!("very lo...", output.to_string());
+    }
+
+    #[test]
     fn much_smaller_than_input_length() {
         let output = "very long string".strunc_len(25);
         assert_eq!("very long string", output.to_string());

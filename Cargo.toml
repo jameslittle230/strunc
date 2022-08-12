@@ -2,8 +2,9 @@
 name = "strunc"
 version = "0.1.0"
 edition = "2021"
-
-# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+authors = ["James Little <littleguy23@gmail.com>"]
+description = "String truncation with suffixes"
+license = "Apache-2.0"
 
 [dependencies]
 unicode-segmentation = "1.9.0"
