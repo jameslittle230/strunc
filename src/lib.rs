@@ -63,7 +63,6 @@ impl ToString for Struncable {
                     self.length
                         .saturating_sub(self.suffix.graphemes(true).count()),
                 )
-                .into_iter()
                 .collect::<Vec<&str>>()
                 .join("")
                 .trim()
